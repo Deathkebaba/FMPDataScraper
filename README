@@ -1,0 +1,12 @@
+This tool pulls data from financialmodelingprep.com and stores it in a local database.
+You need an API-key for this to work. You can add your key into the core.py file.
+
+Currently supported data:
+    -historical minute data
+
+All the functionality is written into core.py
+
+How to use:
+    1: Run initiate.py to create the database and the core tables that data is stored into
+    2: Enter all the stocks you want to watch into the tickers list of sample_populate.py
+    3: Regularily run update.py to get new stock data entered into the database. Automation for this taks is advised (Windows Task Scheduler or similar)
